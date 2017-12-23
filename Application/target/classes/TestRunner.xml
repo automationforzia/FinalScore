@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Final-Score App running on Chrome Browser">
+
+    <parameter name="useSauceLab" value="false"/>
+    <parameter name="userName" value="shamsuuddin85"/>
+    <parameter name="key" value="41bd60b5-f9cf-4269-bcdd-3ca059b2003c"/>
+    <parameter name="appUrl" value="https://www.final-score.com"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="browserName" value="chrome"/>
+    <!--<parameter name="browserVersion" value="45.0.2454.93"/>-->
+    <parameter name="browserVersion" value="63.0"/>
+
+    <test name="Home Page">
+        <classes>
+            <class name="SignInTest"/>
+            <class name="SearchTest"/>
+        </classes>
+    </test>
+
+
+</suite>
